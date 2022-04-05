@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import { useParams } from 'react-router-dom';
 import Rating from '../components/Rating';
 import data from '../data';
@@ -46,7 +46,7 @@ const ProductScreen = (props) => {
                         <li>
                             <div className='row'>
                                 <div>Status</div>
-                                <div>{product.countInStock>0 ? <span className='success'>In Stock</span> : <span className='error'>Unavailable</span>}</div>
+                                <div>{product.countInStock>0 ? <span className='success'>In Stock</span> : <span className='danger'>Unavailable</span>}</div>
                             </div>
                         </li>
                         <li>
@@ -60,4 +60,4 @@ const ProductScreen = (props) => {
     )
 }
 
-export default ProductScreen;
+export default ProductScreen; */

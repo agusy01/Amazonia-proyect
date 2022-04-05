@@ -27,7 +27,7 @@ function App() {
       </header>
       <main>
         <Routes>
-        <Route path='/product/:id' element={<ProductScreen />}></Route>
+        {/* <Route path='/product/:id' element={<ProductScreen />}></Route> */}
         <Route path='/' element={<HomeScreen />} exact></Route>
         </Routes>
       </main>

@@ -13,14 +13,14 @@ const HomeScreen = () => {
 
   useEffect(() => {
     dispatch(listProducts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
       { loading ? (
         <LoadingBox></LoadingBox> 
       ) : error? (
-        <MessageBox var='danger'>{error}</MessageBox> 
+        <MessageBox variant='danger'>{error}</MessageBox> 
         ) : (
           <div className="row center">
             {products.map(product => (

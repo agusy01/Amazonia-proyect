@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import Rating from './Rating';
@@ -8,14 +9,13 @@ const Product = (props) => {
 
   return (
     <div key={product._id} className="card">
-        <a href={`/product/${product._id}`}>
-            {/* image size: 680px by 830px */}
+        <Link to={`/product/${product._id}`}>
             <img className="medium" src={product.image} alt="product" />
-        </a>
+        </Link>
         <div className="card-body">
-            <a href={`/product/${product._id}`}>
+            <Link to={`/product/${product._id}`}>
             <h2>{product.name}</h2>
-            </a>
+            </Link>
             <Rating rating={product.rating} numReviews={product.numReviews}/>
             <div className="price">${product.price}</div>
         </div>

@@ -16,6 +16,7 @@ import SigninScreen from './screens/SigninScreen';
 import { signout } from './actions/userActions';
 import RegisterScreen from './screens/RegisterScreen';
 import ShippingAddressScreen from './screens/ShippingAddressScreen';
+import PaymentMethodScreen from './screens/PaymentMethodScreen';
 
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
           <Route path='/signin' element={<SigninScreen />}></Route>
           <Route path='/register' element={<RegisterScreen />}></Route>
           <Route path='/shipping' element={<ShippingAddressScreen />}></Route>
+          <Route path='/payment' element={<PaymentMethodScreen />}></Route>
         </Routes>
       </main>
       <footer className="row center">All right reserved</footer>

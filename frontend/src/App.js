@@ -18,6 +18,7 @@ import RegisterScreen from './screens/RegisterScreen';
 import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
+import OrderScreen from './screens/OrderScreen';
 
 
 function App() {
@@ -62,16 +63,17 @@ function App() {
       </header>
       <main>
         <Routes>
+          <Route path='/' element={<HomeScreen />} exact></Route>
           <Route path="/cart/:id/*" element={<CartScreen />}></Route>
           <Route path="/cart" element={<CartScreen />}></Route>
           <Route path="/cart/:id" element={<CartScreen />}></Route>
           <Route path='/product/:id' element={<ProductScreen />}></Route>
-          <Route path='/' element={<HomeScreen />} exact></Route>
           <Route path='/signin' element={<SigninScreen />}></Route>
           <Route path='/register' element={<RegisterScreen />}></Route>
           <Route path='/shipping' element={<ShippingAddressScreen />}></Route>
           <Route path='/payment' element={<PaymentMethodScreen />}></Route>
           <Route path='/placeorder' element={<PlaceOrderScreen />}></Route>
+          <Route path='/order/:id' element={<OrderScreen />}></Route>
         </Routes>
       </main>
       <footer className="row center">All right reserved</footer>
